@@ -1,8 +1,12 @@
+
 # SpawnGeos_cppBase
 
 Developed by Unreal Engine 4.18.1
-Katax Emperore
+
+by: Katax
+
 Katax.emperor@gmail.com
+
 www.linkedin.com/in/cliff-sharif/
 
 This application spawned number of static meshes into the stage and, when character collisions with them, each send unique message to game mode class and destroy themselves. This message appears on “Output log” in editor at the moment but can be used for Spawn other static objects or maybe time-based particle system to present destruction effect.
