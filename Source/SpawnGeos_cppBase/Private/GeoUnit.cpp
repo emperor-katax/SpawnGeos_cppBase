@@ -36,10 +36,7 @@ void AGeoUnit::Element_init() {
 
 	// setup mesh and apply scales and positioning
 	Element_Mesh = CreateDefaultSubobject<UStaticMeshComponent>("Element Mesh");
-	
-	//static ConstructorHelpers::FObjectFinder<UStaticMesh> tempMesh(TEXT("StaticMesh'/Game/Geos/Sphere.Sphere'"));
-	static ConstructorHelpers::FObjectFinder<UStaticMesh> tempMesh(TEXT("StaticMesh'/Game/Geos/Cube.Cube'"));	
-	
+	static ConstructorHelpers::FObjectFinder<UStaticMesh> tempMesh(TEXT("StaticMesh'/Game/Geos/Sphere.Sphere'"));
 	if (tempMesh.Object) {
 		Element_Mesh->SetStaticMesh(tempMesh.Object);
 		Element_Mesh->SetMobility(EComponentMobility::Movable);
